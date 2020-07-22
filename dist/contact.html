@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@600&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/1c6b64eb96.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Contact Me | Web Developer & Software Dev</title>
+</head>
+
+<body>
+    <header id="header-inner">
+        <div class="container">
+            <nav id="main-nav">
+                <a href="index.html" class="logo"><i class="fas fa-theater-masks fa-4x"></i>PB</a>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="work.html">Work</a></li>
+                    <li><a href="contact.html" class="current">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Section A: Contact Form -->
+    <section id="contact-a" class="text-center py-3">
+        <div class="container">
+            <h2 class="section-title">Contact Me</h2>
+            <div class="bottom-line"></div>
+            <p class="lead">Here is How You Can Reach Me</p>
+            <form method="POST" data-netlify="true" data-netlify-recaptcha="true">
+                <div class="text-fields">
+                    <input type="text" class="text-input name-input" placeholder="Name" name="name">
+                    <input type="text" class="text-input subject-input" placeholder="Subject" name="subject">
+                    <input type="email" class="text-input email-input" placeholder="Email Address" name="email">
+                    <input type="number" class="text-input phone-input" placeholder="Phone No" name="phone">
+                    <textarea class="text-input message-input" placeholder="Type Your Message"
+                        name="message"></textarea>
+                    <div class="my-2">
+                        <div data-netlify-recaptcha="true"></div>
+                    </div>
+                </div>
+                <button class="btn-dark" type="submit">Submit</button>
+            </form>
+
+        </div>
+    </section>
+
+    <!-- Scetion B: Contact Info -->
+    <section id="contact-b" class="bg-dark py-3">
+        <div class="container">
+            <div class="contact-info">
+                <div>
+                    <i class="fas fa-envelope fa-2x"></i>
+                    <h3>Envelope</h3>
+                    <p>rupanreal7@gmail.com</p>
+                </div>
+                <div>
+                    <i class="fas fa-phone fa-2x"></i>
+                    <h3>Phone</h3>
+                    <p>9903595619</p>
+                </div>
+                <div>
+                    <i class="fas fa-address-card fa-2x"></i>
+                    <h3>Address</h3>
+                    <p>khardaha, Kolkata-700118</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Scetion C: Tagline -->
+    <section id="contact-c" class="bg-main py-4">
+        <div class="container">
+            <h1>Let's Start Your Next Project</h1>
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer id="main-footer">
+        <div class="footer-content container">
+            <p>Copyright &copy; 2020 | All Rights Reserved | Prayas Banerjee</p>
+            <div class="social">
+                <a href="https://www.facebook.com/rupanreal7"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/r_u_p_a_n_7/"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/prayas-banerjee/"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/banerjeePrayas"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

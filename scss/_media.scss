@@ -1,0 +1,188 @@
+// Tablet & smaller Screens
+@media(max-width: 800px) {
+    #header-home {
+        height: 50rem;
+
+        .header-content {
+            padding-top: 5rem;
+        }
+    }
+}
+
+// Smartphones
+@media(max-width: 500px) {
+    #main-nav {
+        flex-direction: column;
+        align-items: center;
+
+        li {
+            padding: 1rem;
+        }
+    }
+
+    #header {
+        &-home {
+            // height: 10rem;
+            // border-bottom: 3px solid $main-color;
+            height: 40rem;
+
+            .header-content {
+                // display: none;
+
+                h1 {
+                    font-size: 2rem;
+                }
+
+                p {
+                    font-size: 1rem;
+                }
+
+                .btn {
+                    padding: 0.5rem 1rem;
+                }
+            }
+        }
+
+        &-inner {
+            height: 10rem;
+        }
+    }
+
+
+    // Stack Gris Column
+    #home-a .specials,
+    #home-b .stats,
+    #home-c .process,
+    #about-d .testimonials,
+    .items {
+        grid-template-columns: 1fr;
+    }
+
+    #home {
+        &-a {
+            .specials div {
+                border-bottom: 1px solid $light-color;
+                padding-bottom: 1rem;
+
+                &:last-child {
+                    border: medium;
+                    padding-bottom: 0;
+                }
+
+            }
+        }
+
+        &-b {
+            .stats div {
+                padding: 1.5rem 0;
+            }
+        }
+    }
+
+
+    // About Page
+    #about {
+        &-a {
+            .about-info {
+                grid-template-areas:
+                    "bioimg"
+                    "bio"
+                    "aw1"
+                    "aw2"
+                    "aw3";
+                text-align: center;
+                align-items: center;
+            }
+
+            .bio-img {
+                width: 200px;
+                align-items: center;
+                margin: auto;
+            }
+
+            .bio {
+                padding: 1rem;
+            }
+        }
+
+        &-c {
+            display: none;
+        }
+    }
+
+
+    // Contact Page
+    #contact {
+        &-a {
+            .text-fields {
+                grid-template-areas:
+                    "name"
+                    "subject"
+                    "email"
+                    "phone"
+                    "message";
+            }
+        }
+
+        &-b {
+            .contact-info {
+                grid-template-columns: 1fr;
+
+                div {
+                    margin-bottom: 1rem;
+                    padding-bottom: 1rem;
+                    border-bottom: 1px solid #555;
+
+                    &:last-child {
+                        border-bottom: none;
+                        margin-bottom: 0;
+                        padding-bottom: 0;
+                    }
+                }
+            }
+        }
+
+        &-c {
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    }
+
+    // Footer
+    #main-footer {
+        height: 8rem;
+
+        .footer-content {
+            flex-direction: column;
+            padding: 1.5rem;
+            height: 5rem;
+
+            .fab {
+                padding-top: 1rem;
+            }
+        }
+    }
+}
+
+
+// Landscape Mode
+@media(max-height: 580px) {
+    #header-home {
+        .header-content {
+            padding-top: 1.5rem;
+
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+
+            .btn {
+                padding: 0.5rem 1rem;
+            }
+        }
+    }
+}
